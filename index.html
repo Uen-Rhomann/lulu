@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>bebefin ❤️</title>
+  <style>
+    body {
+      font-family: "Poppins", Arial, sans-serif;
+      background: linear-gradient(135deg, #ffe6ea, #ffd1e3, #ffeaf4);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      animation: fadeIn 1s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    .card {
+      background: #fff;
+      padding: 40px 30px;
+      border-radius: 28px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.09);
+      max-width: 380px;
+      animation: softPop 0.7s ease;
+      border: 2px solid #ffe1ee;
+    }
+    @keyframes softPop {
+      0% { transform: scale(0.9); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    /* Floating hearts background */
+    .floating-heart {
+      position: absolute;
+      font-size: 18px;
+      color: #ff8aad;
+      animation: floatUp 6s linear infinite;
+      opacity: 0.7;
+    }
+    @keyframes floatUp {
+      0% { transform: translateY(0); opacity: 0.8; }
+      100% { transform: translateY(-120vh); opacity: 0; }
+    }
+
+    h1 {
+      color: #ff4f8b;
+      font-size: 1.85rem;
+      margin: 10px 0;
+    }
+    p {
+      font-size: 1rem;
+      color: #444;
+      margin: 8px 0;
+      line-height: 1.4rem;
+    }
+    .gif {
+      width: 135px;
+      margin-bottom: 20px;
+      animation: float 2.2s ease-in-out infinite;
+    }
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+      100% { transform: translateY(0); }
+    }
+
+    .btn {
+      margin-top: 18px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      background: #ff82a9;
+      color: white;
+      border: none;
+      border-radius: 14px;
+      cursor: pointer;
+      transition: 0.3s;
+      width: 100%;
+      max-width: 260px;
+    }
+    .btn:hover {
+      background: #ff98ba;
+      transform: scale(1.05);
+    }
+    .song-btn {
+      background: #8e6bff;
+    }
+    .song-btn:hover {
+      background: #a58aff;
+    }
+
+    #surprise img {
+      animation: softPop 0.6s ease;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Floating hearts -->
+  <div class="floating-heart" style="left: 15%; animation-delay: 0s;">💗</div>
+  <div class="floating-heart" style="left: 45%; animation-delay: 2s;">💕</div>
+  <div class="floating-heart" style="left: 70%; animation-delay: 1s;">💞</div>
+
+  <div class="card">
+
+    <img class="gif" src="https://media.tenor.com/GNrBaeV8I-cAAAAi/quby-high-five.gif" alt="cute gif" />
+
+    <h1>Hi my baby Luise! 💕</h1>
+    <p>I know you're stressed right now, love. </p>
+    <p>Take a slow deep breath for me... you're doing so well.</p>
+    <p>Every problem you're facing will pass, and I'll be with you through all of it.</p>
+    <p>You’re strong, soft, precious, and I love you so much.</p>
+    <p>Everything will be okay — I promise. 💗</p>
+
+    <button id="giftBtn" class="btn">Click for Surprise 🎁</button>
+
+    <div id="surprise" style="display:none; margin-top:20px;">
+      <img src="https://media.tenor.com/Tb5oi-FdAg0AAAAi/fofo-cute.gif" alt="surprise" style="width:200px; border-radius:15px;" />
+      <p style="color:#ff5c8d; font-weight:bold;">mwaa for you! 💕</p>
+    </div>
+
+    <iframe style="border-radius:12px;margin-top:20px;" src="https://open.spotify.com/embed/track/0aJrYfARfCKzv6gXjhs4SZ?utm_source=generator" width="100%" height="152" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+  </div>
+
+  <script>
+    document.getElementById('giftBtn').addEventListener('click', function() {
+      document.getElementById('surprise').style.display = 'block';
+      this.style.display = 'none';
+    });
+  </script>
+</body>
+</html>
